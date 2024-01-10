@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Sofia+Sans+Extra+Condensed&family=Tajawal&display=swap');
+$fonts: (
+    Titoli: 'Headland One',
+    Paragrafi: 'Tajawal',
+    Bottoni: 'Sofia Sans Extra Condensed',
+    Links: 'Sofia Sans Extra Condensed'
+);
+
+$fontsSizes: (
+    Titoli: 2.5rem,
+    Paragrafi: 1.2rem,
+    Bottoni: 1.5rem,
+    Links: 1.1rem
+);
+
+@each $className, $fontValue in $fonts {
+    .classeFontPer#{$className} {
+        font-family: $fontValue;
+    }
+}
+
+@each $fontSize, $fontSizeValue in $fontsSizes {
+    .fontSizePer#{$fontSize} {
+        font-size: $fontSizeValue;
+    }
+}

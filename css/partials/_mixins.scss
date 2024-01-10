@@ -1,0 +1,20 @@
+@mixin usaIlFlexPerCentrare {
+    display: flex;
+    align-items: center;
+}
+
+@mixin disponiNavBar {
+    @include usaIlFlexPerCentrare();
+
+    &>* {
+        margin: 0.5rem;
+
+        @media screen and (min-width: 720px) {
+            margin: 0.75rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            margin: 1.5rem;
+        }
+    }
+}

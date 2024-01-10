@@ -6,10 +6,14 @@
 @import './partials/animations';
 @import './partials/mixins';
 
+body {
+    background-color: $background-color;
+}
+
 #navLogo {
     height: 2rem;
 }
 
-body {
-    background-color: $main-color;
+nav {
+    @include disponiNavBar()
 }

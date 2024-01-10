@@ -1,0 +1,16 @@
+$dimensioniBottoni: (
+    Minima: 0.25rem,
+    Piccola: 0.5rem,
+    Media : 0.75rem,
+    Grande: 1.5rem,
+    Enorme:2.5rem
+);
+
+@each $grandezza, $taglia in $dimensioniBottoni {
+    .tagliaBottone#{$grandezza} {
+        padding: $taglia;
+        font-size: $taglia*2.5;
+        margin: $taglia;
+        border-radius: 15px;
+    }
+}

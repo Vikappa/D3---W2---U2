@@ -2,3 +2,16 @@ $main-color: #12191B;
 $second-color: #1d3941;
 $third-color: #165161;
 $background-color: #001920;
+$sfondo-hero: #640fc5;
+
+$colori: (
+    primario: #ff0000,
+    secondario: #00ff00,
+    terziario: #0000ff,
+);
+
+@each $finalName, $colore in $colori {
+    .btnColor-#{$finalName} {
+        background-color: $colore;
+    }
+}
